@@ -1,8 +1,47 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# React Native Product List App
 
-# Getting Started
+A simple React Native application that displays a list of products fetched from an API. Users can view product details by clicking on individual items.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+## Table of Contents
+
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+- [Running the Application](#running-the-application)
+- [Folder Structure](#folder-structure)
+- [API Source](#api-source)
+
+## Features
+
+- Fetches product data from an external API
+- Displays products in a user-friendly card format
+- Allows navigation to detailed product information
+
+## Technologies Used
+
+- **React Native**: A framework for building native apps using React
+- **Axios**: For making HTTP requests
+- **React Navigation**: For handling navigation between screens
+- **React Native Elements**: UI toolkit for React Native
+
+## Getting Started
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+- Node.js (v12 or later)
+- React Native CLI or Expo CLI
+- Android Studio or Xcode (for Android and iOS development, respectively)
+
+### Installation
+
+Clone the repository:
+
+````bash
+git clone <repo-name>
+cd p<repo-name>
+
 
 ## Step 1: Start the Metro Server
 
@@ -16,7 +55,7 @@ npm start
 
 # OR using Yarn
 yarn start
-```
+````
 
 ## Step 2: Start your Application
 
@@ -55,25 +94,17 @@ Now that you have successfully run the app, let's modify it.
 
    For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
 
-## Congratulations! :tada:
+## Congratulations! :
 
 You've successfully run and modified your React Native App. :partying_face:
 
-### Now what?
+## Folder Structure
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
+ecom-project │
+├── src │ ├── components │ │ ├── Loading.js │ │ └── ProductCard.js │ │ │ ├── screens │ │ ├── ProductListScreen.js │ │ └── ProductDetailsScreen.js │ │ │ ├── App.js │ ├── package.json │ └── README.md
 
-# Troubleshooting
+## API Source
 
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+The application fetches product data from the following API:
 
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+https://dummyjson.com/products
