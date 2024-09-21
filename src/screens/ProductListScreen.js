@@ -1,4 +1,3 @@
-// screens/ProductListScreen.js
 import React, {useEffect, useState} from 'react';
 import {View, FlatList, StyleSheet} from 'react-native';
 import axios from 'axios';

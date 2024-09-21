@@ -1,4 +1,3 @@
-// components/ProductDetails.js
 import React from 'react';
 import {View, Text, Image, StyleSheet, Dimensions} from 'react-native';
 
@@ -30,7 +29,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
   },
   image: {
-    width: width - 40, // Adjust for padding
+    width: width - 40,
     height: 300,
     borderRadius: 8,
     resizeMode: 'cover',
